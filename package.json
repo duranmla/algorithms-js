@@ -1,0 +1,8 @@
+{
+  "name": "algorithms-js",
+  "version": "1.0.0",
+  "description": "Just me playing around with couple well known algorithms and CodeSandbox",
+  "keywords": ["javascript", "algorithms"],
+  "main": "/index.html",
+  "dependencies": {}
+}
