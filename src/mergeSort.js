@@ -2,6 +2,23 @@
  * @param {Array} left
  * @param {Array} right
  */
+const mergeAlt = (left, right) => {
+    const sorted = [];
+    while (left.length && right.length) {
+        if (left[0] <= right[0]) {
+            sorted.push(left.shift());
+        } else {
+            sorted.push(right.shift());
+        }
+    }
+    let results = [...sorted, ...left, ...right];
+    return results;
+};
+
+/**
+ * @param {Array} left
+ * @param {Array} right
+ */
 const merge = (left, right) => {
     let sorted = [],
         leftIndex = 0,
